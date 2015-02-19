@@ -1,0 +1,46 @@
+@main("Cluster Demo") {
+    <!-- Cluster Demo Socket JavaScript -->
+    <script src="/assets/javascripts/socket.js" type="text/javascript"></script>
+} {
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 column">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Other Users</h3>
+                </div>
+                <div class="panel-body">
+                    <ul id="users" class='list-group'>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 column" id="chat-column">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Chat</h3>
+                </div>
+                <div class="panel-body">
+                    <div id='chat'>
+                        <!-- List of chat messages -->
+                    </div>
+                    <form class="form-inline" onsubmit="return submitForm();">
+                        <input style='width:99%' type='text' class='form-control' id='input-message' placeholder="Write something and press enter..." />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 column">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Logs</h3>
+                </div>
+                <div class="panel-body">
+                    <div id='output'><p>Output starts. Blacks are sent json, blues are received.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}

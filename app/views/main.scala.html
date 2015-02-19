@@ -1,0 +1,42 @@
+@(title: String)(head: Html)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <!-- Jquery -->
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <!-- Latest compiled and minified CSS: http://bootswatch.com/flatly/# -->
+        <link rel="stylesheet" href="/assets/stylesheets/bootstrap.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+        <!-- Client Css -->
+        <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+        @head
+    </head>
+    <body>
+        <div class="container" style="padding:20px 0;">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Akka Cluster Demo</a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="username-link" href="#"></a></li>
+                        <li><a id='reset-link' href="/reset">reset</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        @content
+    </body>
+</html>

@@ -1,0 +1,45 @@
+.column {
+
+}
+
+.inner-column {
+	border-radius:6px;
+	padding:8px;
+}
+
+.messages {
+	overflow:scroll;
+	max-height:340px;
+}
+
+.messages p {
+	display:block;
+	margin:0;
+	padding:4px 0;
+}
+
+#users li {
+	cursor:pointer;
+}
+
+#output {
+	overflow:scroll;
+	height:360px;
+}
+
+#chat {
+	height:360px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #18bc9c;
+    border-color: #18bc9c;
+}
+
+.dot {
+	float:right;
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	margin-top:6px;
+}
