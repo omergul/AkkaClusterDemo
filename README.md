@@ -16,6 +16,8 @@ I have developed an application called [Hotchat][1] recently. The backend of Hot
 
 This project is built on top of Play Framework 2.3.7 . Play initializes its own Akka system, but it does not natively support Akka Clustering. So I have added features to support clustering. We are using Redis to simply store users. I also developed a javascript client for the purpose of easy testing. My js knowledge is bit outdated, I tried my best to write it clearly and structured but it is not that good. If someone can send a pull-request to improve (using Angular or React would be greayt), it is very welcome!
 
+![Screenshot](https://raw.githubusercontent.com/omergul123/AkkaClusterDemo/master/screenshot.png)
+
 ## How to Install
 
 Download or clone the project.
